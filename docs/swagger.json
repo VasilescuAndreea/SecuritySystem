@@ -1,0 +1,144 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is the REST HTTP API documentation for the smart security system.",
+    "version": "1.0.0",
+    "title": "Smart Security"
+  },
+  "host": "127.0.0.1",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "tags": [
+          "Smart Security API"
+        ],
+        "description": "See the up is running",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Message up and running",
+            "schema": {
+              "type": "string",
+              "example": "Security system is up and running."
+            }
+          }
+        }
+      }
+    },
+    "/cctv": {
+      "get": {
+        "tags": [
+          "Smart Security API"
+        ],
+        "description": "Get last image",
+        "produces": [
+          "application/html"
+        ],
+        "responses": {
+          "200": {
+            "description": "html image tag",
+            "schema": {
+              "type": "string",
+              "example": "<img />"
+            }
+          }
+        }
+      }
+    },
+    "/getCurrentCCTV": {
+      "get": {
+        "tags": [
+          "Smart Security API"
+        ],
+        "description": "Get a picture of what cctv see live.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "base64 image",
+            "schema": {
+              "type": "string",
+              "example": "bdsadfasda=="
+            }
+          }
+        }
+      }
+    },
+    "/alarm/{mode}": {
+      "get": {
+        "tags": [
+          "Smart Security API"
+        ],
+        "description": "Set the alarm/disarm of the system",
+        "parameters": [
+          {
+            "name": "mode",
+            "in": "path",
+            "description": "alarm / disarm",
+            "required": true,
+            "type": "string",
+            "format": "string"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Get what action has it done",
+            "schema": {
+              "type": "string",
+              "example": "True"
+            }
+          }
+        }
+      }
+    },
+    "/logsAlarm": {
+      "get": {
+        "tags": [
+          "Smart Security API"
+        ],
+        "description": "Get the array of dates when alarm was started.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Get what action has it done",
+            "schema": {
+              "type": "object",
+              "example": "{\"logs\": [\"02/01/2022, 22:12:45\"] }"
+            }
+          }
+        }
+      }
+    },
+    "/getStatus": {
+      "get": {
+        "tags": [
+          "Smart Security API"
+        ],
+        "description": "Get the current status of the whole system.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Get a json of the system.",
+            "schema": {
+              "type": "object",
+              "example": "{\"alarmStatus\": true, \"sensors\": [1, 1], \"cctvLastImg\": \"img\" }"
+            }
+          }
+        }
+      }
+    }
+  }
+}

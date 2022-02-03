@@ -1,0 +1,84 @@
+asyncapi: 2.0.0
+info:
+  title: Streetlights API
+  version: '1.0.0'
+  description: |
+    The Smart Security API allows you to remotely manage your home security system.
+
+servers:
+  production:
+    url: test.mosquitto.org
+    protocol: mqtt
+    description: Test MQTT broker
+    
+
+channels:
+  Sensor_1:
+    description: The topic on sensor 1
+    subscribe:
+      summary: Receive information about sensor 1 status
+      message:
+        name: sensorStatus
+        title: The status of sensor 1
+        payload:
+          status:
+            type: number
+            description: "1"
+    publish:
+      summary: Send information about sensor 1 status
+      message:
+        name: sensorStatus
+        title: The status of sensor 1
+        payload:
+          status:
+            type: number
+            description: "1"
+
+  Sensor_2:
+    description: The topic on sensor 2
+    subscribe:
+      summary: Receive information about sensor 2 status
+      message:
+        name: sensorStatus
+        title: The status of sensor 2
+        payload:
+          status:
+            type: number
+            description: "2"
+    publish:
+      summary: Send information about sensor 2 status
+      message:
+        name: sensorStatus
+        title: The status of sensor 2
+        payload:
+          status:
+            type: number
+            description: "2"
+
+  CCTV/request:
+    description: Request to the the cctv picture.
+    subscribe:
+      summary: Listen for a cctv request.
+    publish:
+      summary: Send a cctv request.
+
+  CCTV/requestSent:
+    description: Get the image of cctv in base64.
+    subscribe:
+      summary: Wait to get an image.
+      message:
+        name: cctvImage
+        title: Image of the cctv in base64.
+        payload:
+          status:
+            type: string
+            description: "dsadada===="
+    publish:
+      summary: Send a base64 cctv image.
+      message:
+        name: cctvImage
+        title: Image of the cctv in base64.
+        payload:
+          status:
+            type: string
+            description: "dsadada===="

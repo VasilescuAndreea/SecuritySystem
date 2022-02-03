@@ -1,0 +1,141 @@
+Request from grammar does not exist in the Request Collection!
+GET 
+
+Setting fuzzing schemes: directed-smoke-test
+2022-02-02 15:51:15.012: Going to fuzz a set with 6 requests
+2022-02-02 15:51:15.012: Request-0: Value Combinations: 1
+2022-02-02 15:51:15.012: Request-1: Value Combinations: 1
+2022-02-02 15:51:15.012: Request-2: Value Combinations: 1
+2022-02-02 15:51:15.012: Request-3: Value Combinations: 1
+2022-02-02 15:51:15.012: Request-4: Value Combinations: 1
+2022-02-02 15:51:15.012: Request-5: Value Combinations: 1
+2022-02-02 15:51:15.012: Avg. Value Combinations per Request: 1
+2022-02-02 15:51:15.012: Median Value Combinations per Request: 1.0
+2022-02-02 15:51:15.012: Min Value Combinations per Request: 1
+2022-02-02 15:51:15.012: Max Value Combinations per Request: 1
+2022-02-02 15:51:15.012: Total dependencies: 0
+
+2022-02-02 15:51:15.013: Generation: 1 / Sequences Collection Size: 6 
+(After directed-smoke-test Extend)
+
+Rendering request 0 from scratch
+
+2022-02-02 15:51:17.097: Request 0
+2022-02-02 15:51:17.097: Endpoint - /alarm/{mode}
+2022-02-02 15:51:17.097: Hex Def - 2e75b33dde380edaff45ebf683886759e267c8b6
+2022-02-02 15:51:17.097: Sequence length that satisfies dependencies: 1
+2022-02-02 15:51:17.101: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'alarm'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: 127.0.0.1\r\n'
+		- restler_static_string: '\r\n'
+
+Rendering request 1 from scratch
+
+2022-02-02 15:51:19.194: Request 1
+2022-02-02 15:51:19.195: Endpoint - /getStatus
+2022-02-02 15:51:19.195: Hex Def - 53f8c4d3fb1bb4cce0b9c7c8de52732777fa7c18
+2022-02-02 15:51:19.195: Sequence length that satisfies dependencies: 1
+2022-02-02 15:51:19.199: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'getStatus'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: 127.0.0.1\r\n'
+		- restler_static_string: '\r\n'
+
+Rendering request 2 from scratch
+
+2022-02-02 15:51:21.288: Request 2
+2022-02-02 15:51:21.288: Endpoint - /getCurrentCCTV
+2022-02-02 15:51:21.288: Hex Def - 7ac6f43ef529ccc170e943a81ef7a221a5961030
+2022-02-02 15:51:21.288: Sequence length that satisfies dependencies: 1
+2022-02-02 15:51:21.293: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'getCurrentCCTV'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: 127.0.0.1\r\n'
+		- restler_static_string: '\r\n'
+
+Rendering request 3 from scratch
+
+2022-02-02 15:51:23.382: Request 3
+2022-02-02 15:51:23.382: Endpoint - /cctv
+2022-02-02 15:51:23.382: Hex Def - 89e8fe97af7306b03110b63bc467f42e1a0156d1
+2022-02-02 15:51:23.382: Sequence length that satisfies dependencies: 1
+2022-02-02 15:51:23.386: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'cctv'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: 127.0.0.1\r\n'
+		- restler_static_string: '\r\n'
+
+Rendering request 4 from scratch
+
+2022-02-02 15:51:25.490: Request 4
+2022-02-02 15:51:25.490: Endpoint - 
+2022-02-02 15:51:25.490: Hex Def - fa520765ee1d48ac3af19ea19dd224d71a58cffc
+2022-02-02 15:51:25.490: Sequence length that satisfies dependencies: 1
+2022-02-02 15:51:25.495: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: 127.0.0.1\r\n'
+		- restler_static_string: '\r\n'
+
+Rendering request 5 from scratch
+
+2022-02-02 15:51:27.593: Request 5
+2022-02-02 15:51:27.593: Endpoint - /logsAlarm
+2022-02-02 15:51:27.593: Hex Def - fb292bc70b0e1ab92ecfd0834b4f3167d58815d8
+2022-02-02 15:51:27.593: Sequence length that satisfies dependencies: 1
+2022-02-02 15:51:27.597: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'logsAlarm'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: 127.0.0.1\r\n'
+		- restler_static_string: '\r\n'
+
+2022-02-02 15:51:27.611: Generation: 1 / Sequences Collection Size: 0 
+(After directed-smoke-test Render)
+
+2022-02-02 15:51:27.615: Final Swagger spec coverage: 0 / 6
+2022-02-02 15:51:27.615: Rendered requests: 0 / 6
+2022-02-02 15:51:27.615: Rendered requests with "valid" status codes: 0 / 0
+2022-02-02 15:51:27.615: Num fully valid requests (no resource creation failures): 0
+2022-02-02 15:51:27.615: Num requests not rendered due to invalid sequence re-renders: 0
+2022-02-02 15:51:27.615: Num invalid requests caused by failed resource creations: 0
+2022-02-02 15:51:27.615: Total Creations of Dyn Objects: 0
+2022-02-02 15:51:27.615: Total Requests Sent: {'gc': 0, 'main_driver': 0}
+2022-02-02 15:51:27.615: Bug Buckets: {}
+
+Testing completed -- below are the final stats:
+
+2022-02-02 15:51:27.633: Final Swagger spec coverage: 0 / 6
+2022-02-02 15:51:27.633: Rendered requests: 0 / 6
+2022-02-02 15:51:27.633: Rendered requests with "valid" status codes: 0 / 0
+2022-02-02 15:51:27.633: Num fully valid requests (no resource creation failures): 0
+2022-02-02 15:51:27.633: Num requests not rendered due to invalid sequence re-renders: 0
+2022-02-02 15:51:27.633: Num invalid requests caused by failed resource creations: 0
+2022-02-02 15:51:27.633: Total Creations of Dyn Objects: 0
+2022-02-02 15:51:27.633: Total Requests Sent: {'gc': 0, 'main_driver': 0}
+2022-02-02 15:51:27.633: Bug Buckets: {}
